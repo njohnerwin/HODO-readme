@@ -6,8 +6,11 @@ A simple Node program designed to generate useful README files. Originally devel
 ## Table of Contents
 
 [Installation](#installation)
+
 [Usage](#usage)
+
 [Contributing](#contributing)
+
 [Questions](#questions)
 
 ## Installation
@@ -25,5 +28,6 @@ If you would like to contribute to the project, please contact the developer and
 ## Questions
 
 If you have any questions, comments, or concerns about this project, feel free to message the developer at njohnerwin@gmail.com
+
 
 [![forthebadge](https://forthebadge.com/images/badges/uses-js.svg)](https://forthebadge.com)
