@@ -6,18 +6,18 @@ let filenameStr;
 console.log("We'll generate a good README for you - we just need you to fill out the following fields.");
 
 function compileFile(response) {     
-    let tableContents = `\n[Installation](#installation)\n[Usage](#usage)`
+    let tableContents = `\n- [Installation](#installation)\n- [Usage](#usage)`
 
     let readmeContents;
 
     if (response.github) {
-        tableContents = tableContents + "\n[Contributing](#contributing)";
+        tableContents = tableContents + "\n- [Contributing](#contributing)";
     }
     if (response.testFramework) {
-        tableContents = tableContents + "\n[Tests](#tests)";
+        tableContents = tableContents + "\n- [Tests](#tests)";
     }
     if (response.email && response.confirmContact) {
-        tableContents = tableContents + "\n[Questions](#questions)";
+        tableContents = tableContents + "\n- [Questions](#questions)";
     }
 
     readmeContents = `\n# ${response.title}\n\n${response.description}\n\n## Table of Contents\n${tableContents}\n\n## Installation\n\n${response.install}\n\n## Usage\n\n${response.usage}`;
@@ -35,13 +35,13 @@ function compileFile(response) {
     }
 
     if (response.htmlBadge && response.jsBadge) {
-        readmeContents += `\n\n[![forthebadge](https://forthebadge.com/images/badges/uses-html.svg)](https://forthebadge.com)\n[![forthebadge](https://forthebadge.com/images/badges/uses-js.svg)](https://forthebadge.com)`;
+        readmeContents += `\n\n\n[![forthebadge](https://forthebadge.com/images/badges/uses-html.svg)](https://forthebadge.com)\n[![forthebadge](https://forthebadge.com/images/badges/uses-js.svg)](https://forthebadge.com)`;
     }
     else if (response.htmlBadge) {
-        readmeContents += `\n\n[![forthebadge](https://forthebadge.com/images/badges/uses-html.svg)](https://forthebadge.com)`;
+        readmeContents += `\n\n\n[![forthebadge](https://forthebadge.com/images/badges/uses-html.svg)](https://forthebadge.com)`;
     }
     else if (response.jsBadge) {
-        readmeContents += `\n\n[![forthebadge](https://forthebadge.com/images/badges/uses-js.svg)](https://forthebadge.com)`;
+        readmeContents += `\n\n\n[![forthebadge](https://forthebadge.com/images/badges/uses-js.svg)](https://forthebadge.com)`;
     }
 
     return readmeContents;
