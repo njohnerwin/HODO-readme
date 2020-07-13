@@ -5,13 +5,10 @@ A simple Node program designed to generate useful README files. Originally devel
 
 ## Table of Contents
 
-[Installation](#installation)
-
-[Usage](#usage)
-
-[Contributing](#contributing)
-
-[Questions](#questions)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [Questions](#questions)
 
 ## Installation
 
