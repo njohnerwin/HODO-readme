@@ -18,6 +18,8 @@ A simple Node program designed to generate useful README files. Originally devel
 
 Run with 'node index.js' and then answer the provided questions. You will be prompted for a filename (extension not required.) All files produced are markdown (.md) files. If no filename is given, the default will be 'README.md'
 
+Demonstration: https://youtu.be/LgA5I2Kjzjk
+
 ## Contributing
 
 If you would like to contribute to the project, please contact the developer and ask for access to the repository at github.com/njohnerwin
